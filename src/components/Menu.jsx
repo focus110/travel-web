@@ -16,7 +16,7 @@ const Menu = ({ handleIsVisible }) => {
         </a>
         <ul className="hidden md:flex space-x-8">
           {menu.map((item, index) => (
-            <li key={index} className="text-lg">
+            <li key={index} className="">
               <a
                 href="/"
                 className={
