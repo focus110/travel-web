@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { menu } from "./Constant";
 import { motion } from "framer-motion";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import logo from "../assets/logo.png";
 
 const MobileMenu = ({ isvisible, handleIsVisible }) => {
+  const [activeMenu, setActiveMenu] = useState("Home");
+
+  const handleMenuClick = (menu) => {
+    setActiveMenu(menu);
+  };
+
   const slideInVariants = {
     initial: {
       x: "-100%", // Initial position off-screen to the left
@@ -35,9 +41,14 @@ const MobileMenu = ({ isvisible, handleIsVisible }) => {
       </div>
       <ul className="md:hidden space-y-4 text-left">
         {menu.map((item, index) => (
-          <li key={index} className="">
-            <a href="/" className="hover:text-slate-500">
-              {" "}
+          <li key={index}>
+            <a
+              href="/"
+              className={
+                activeMenu === item ? "text-gray-800" : "text-gray-500"
+              }
+              onClick={() => handleMenuClick(item)}
+            >
               {item}
             </a>
           </li>
