@@ -4,8 +4,8 @@ import { articles } from "./Constant";
 const Carousel = () => {
   return (
     <div>
-      <div className="overflow-x-scroll no-scrollbar py-8">
-        <div className="flex flex-col justify-center md:flex-row md:space-x-8 items-center px-4">
+      <div className="overflow-x-scroll no-scrollbar md:pt-8">
+        <div className="flex flex-col justify-center md:flex-row md:space-x-8 items-center px-4 pb-4">
           {articles.map((item, index) => (
             <a
               href="#"
