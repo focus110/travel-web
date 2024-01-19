@@ -7,8 +7,8 @@ const About = () => {
       <Title title={`Welcome to Colchester`} />
       <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8">
         <img
-          className="md:w-[400px] rounded-[10px]"
-          src="https://cdn.pixabay.com/photo/2023/06/27/10/51/pier-8091934_1280.jpg"
+          className="md:w-[400px]"
+          src="https://cdn.pixabay.com/photo/2016/11/22/19/25/man-1850181_1280.jpg"
           alt=""
         />
         <p className="md:w-[50%] text-light-grey text-left mt-8 md:mt-0">

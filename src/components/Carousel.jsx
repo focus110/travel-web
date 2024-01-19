@@ -19,7 +19,7 @@ const Carousel = () => {
                 />
                 <div className="pb-4">
                   <h4 className="text-lg mb-4 text-left">
-                    <a href="/#" className="hover:text-gray-500">{item.title}</a>
+                    <a href="/#" className="hover:text-gray-500 duration-75">{item.title}</a>
                   </h4>
                   <p className="text-sm text-left mb-2">{item.desc}</p>
                 </div>

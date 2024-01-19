@@ -11,22 +11,23 @@ const Blog = () => {
           <div className="flex flex-col lg:flex-row  xl:space-x-8 overflow-x-scroll no-scrollbar md:pt-8">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center space-x-2">
               {articles.map((item, index) => (
-                <a
-                  href={"/#"}
-                  className="md:w-[300px] overflow-hidden mb-8 md:mb-8"
-                >
+                <div className="md:w-[300px] overflow-hidden mb-8 md:mb-8">
                   <img
                     className="mb-2"
                     src="https://cdn.pixabay.com/photo/2020/12/10/06/24/christmas-tree-5819465_1280.jpg"
                     alt=""
                   />
                   <div className="pb-4">
-                    <a href="/#" className="hover:text-gray-500">
+                    <a
+                      href={"/blog/" + index}
+                      // href={"/blog/" + item.title.split(" ").join("-")}
+                      className="hover:text-gray-500 duration-75"
+                    >
                       <h4 className="text-lg mb-4 text-left">{item.title}</h4>
                     </a>
                     <p className="text-sm text-left mb-2">{item.desc}</p>
                   </div>
-                </a>
+                </div>
               ))}
             </div>
 

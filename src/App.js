@@ -8,12 +8,15 @@ import { Home, Blog, NotFound } from "./page/index";
 import { useState } from "react";
 import MobileMenu from "./components/MobileMenu";
 import Menu from "./components/Menu";
+import Single from "./page/Single";
 
 function App() {
   const [isvisible, setIsVisible] = useState(false);
+
   const handleIsVisible = () => {
     setIsVisible(!isvisible);
   };
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -22,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<Single />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
