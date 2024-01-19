@@ -13,15 +13,17 @@ const Blog = () => {
               {articles.map((item, index) => (
                 <a
                   href={"/#"}
-                  className="md:w-[300px] shadow-lg rounded-[10px] overflow-hidden mb-8 md:mb-8"
+                  className="md:w-[300px] overflow-hidden mb-8 md:mb-8"
                 >
                   <img
                     className="mb-2"
                     src="https://cdn.pixabay.com/photo/2020/12/10/06/24/christmas-tree-5819465_1280.jpg"
                     alt=""
                   />
-                  <div className="p-8">
-                    <h4 className="text-lg mb-4 text-left">{item.title}</h4>
+                  <div className="pb-4">
+                    <a href="/#" className="hover:text-gray-500">
+                      <h4 className="text-lg mb-4 text-left">{item.title}</h4>
+                    </a>
                     <p className="text-sm text-left mb-2">{item.desc}</p>
                   </div>
                 </a>
