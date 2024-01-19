@@ -7,7 +7,7 @@ module.exports = {
         primary: "",
         secondary: "",
         title: "#202124",
-        title: "#202124",
+        "light-grey": "#4d4c4c",
       },
       container: {
         center: true,

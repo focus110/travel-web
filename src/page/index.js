@@ -1,3 +1,5 @@
 import Home from "./Home";
+import Blog from "./Blog";
+import NotFound from "./NotFound";
 
-export { Home };
+export { Home, Blog,NotFound };

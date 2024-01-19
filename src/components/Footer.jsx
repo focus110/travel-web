@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="py-8">
+    <div className="py-8 bg-gray-200">
       <p className="text-gray-400 text-sm">© 2023 All Rights Reserved</p>
     </div>
   );

@@ -43,13 +43,13 @@ const MobileMenu = ({ isvisible, handleIsVisible }) => {
         {menu.map((item, index) => (
           <li key={index}>
             <a
-              href="/"
+              href={item?.url}
               className={
-                activeMenu === item ? "text-gray-800" : "text-gray-500"
+                activeMenu === item?.name ? "text-gray-800" : "text-gray-500"
               }
-              onClick={() => handleMenuClick(item)}
+              onClick={() => handleMenuClick(item?.name)}
             >
-              {item}
+              {item?.name}
             </a>
           </li>
         ))}

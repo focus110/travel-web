@@ -11,7 +11,7 @@ const About = () => {
           src="https://cdn.pixabay.com/photo/2023/06/27/10/51/pier-8091934_1280.jpg"
           alt=""
         />
-        <p className="md:w-[50%] text-left mt-8">
+        <p className="md:w-[50%] text-light-grey text-left mt-8 md:mt-0">
           Greetings to Colchester! Once hailed as Britain's First City and the
           former capital of Roman Britain, our illustrious history spans over
           2000 years. When you explore our city, you'll find the historic center

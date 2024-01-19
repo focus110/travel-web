@@ -1,18 +1,16 @@
-import React, { useState } from "react";
-import Menu from "../components/Menu";
+import React from "react";
 import Banner from "../components/Banner";
-import MobileMenu from "../components/MobileMenu";
+import About from "../components/About";
+import Slider from "../components/Slider";
+import LatestArticle from "./LatestArticle";
 
 const Home = () => {
-  const [isvisible, setIsVisible] = useState(false);
-  const handleIsVisible = () => {
-    setIsVisible(!isvisible);
-  };
   return (
     <div className="">
-      <MobileMenu isvisible={isvisible} handleIsVisible={handleIsVisible} />
-      <Menu handleIsVisible={handleIsVisible} />
       <Banner />
+      <About />
+      <Slider />
+      <LatestArticle />
     </div>
   );
 };
