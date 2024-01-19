@@ -9,10 +9,13 @@ const Single = () => {
   const { title, img, desc, article } = articles[id];
   return (
     <div className="container">
-      <div className="py-8">
-        <h1 className="text-[32px] font-semibold">Blog  {title}</h1>
-        <img src={img} alt={title} />
-        <p>{article}</p>
+      <div className="">
+        <div className="text-left font-semibold mb-4 text-lg text-gray-600">Travel article</div>
+        <h1 className="text-[32px] text-left font-bold leading-[1.1] mb-8">
+          {title}
+        </h1>
+        <img className="mb-8 md:h-[400px] md:w-full object-cover" src={img} alt={title} />
+        <p className="text-[20px] leading-[1.5] text-left mb-8">{article}</p>
       </div>
     </div>
   );

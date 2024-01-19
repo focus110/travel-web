@@ -5,9 +5,9 @@ const Carousel = () => {
   return (
     <div>
       <div className="overflow-x-scroll no-scrollbar md:pt-8">
-        <div className="flex flex-col justify-center md:flex-row md:space-x-8 items-center px-4 pb-4">
+        <div className="flex flex-col justify-center md:flex-row md:space-x-8 px-4 pb-4">
           {articles.map((item, index) =>
-            index === 2 ? null : (
+            index > 2 ? null : (
               <a
                 href="/#"
                 className="md:w-[300px] overflow-hidden mb-8 md:mb-0"
@@ -19,7 +19,12 @@ const Carousel = () => {
                 />
                 <div className="pb-4">
                   <h4 className="text-lg mb-4 text-left">
-                    <a href="/#" className="hover:text-gray-500 duration-75">{item.title}</a>
+                    <a
+                      href={"/blog/" + index}
+                      className="hover:text-gray-500 duration-75 leading-[1.1]"
+                    >
+                      {item.title}
+                    </a>
                   </h4>
                   <p className="text-sm text-left mb-2">{item.desc}</p>
                 </div>
