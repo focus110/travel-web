@@ -9,13 +9,13 @@ const Blog = () => {
       <div>
         <div>
           <div className="flex flex-col lg:flex-row  xl:space-x-8 overflow-x-scroll no-scrollbar md:pt-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center space-x-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 space-x-2">
               {articles.map((item, index) => (
                 <div className="md:w-[300px] overflow-hidden mb-8 md:mb-8">
                   <img
                     className="mb-2"
-                    src="https://cdn.pixabay.com/photo/2020/12/10/06/24/christmas-tree-5819465_1280.jpg"
-                    alt=""
+                    src={item?.img}
+                    alt={item.title}
                   />
                   <div className="pb-4">
                     <a

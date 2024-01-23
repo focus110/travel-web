@@ -45,13 +45,13 @@ export const articles = [
   {
     title: "Christmas Late Night Shopping in Colchester",
     desc: "Late night shopping returns to Colchester Town Centre for Christmas 2023",
-    img: "",
+    img: "https://cdn.pixabay.com/photo/2019/08/10/03/15/bridge-4396131_1280.jpg",
     article: "",
   },
   {
     title: "Theatre of Widdershins: The GIngerbread Man & A Pot Full of",
     desc: "Festive Family Puppetry at Colchester Arts Centre",
-    img: "",
+    img: "https://cdn.pixabay.com/photo/2022/04/03/09/04/bridge-7108432_1280.jpg",
     article: "",
   },
   {
