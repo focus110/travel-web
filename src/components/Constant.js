@@ -10,6 +10,7 @@ export const articles = [
     title: "Colchester Unveiled: A Journey Through Time and Modernity",
     desc: "Late night shopping returns to Colchester Town Centre for Christmas 2023",
     img: "https://cdn.pixabay.com/photo/2020/03/13/08/34/south-station-4927286_1280.jpg",
+    category: "Art",
     article: `Introduction:
 
     Greetings, fellow travelers! Welcome to Colchester, a city that wears its history like a finely tailored cloak, where ancient tales unfold amidst the contemporary buzz of a modern metropolis. Once celebrated as Britain's First City and a former Roman capital, Colchester boasts a rich tapestry of heritage spanning over two millennia. In 2022, the city was granted contemporary status during the Queen's Platinum Jubilee, signaling a vibrant, modern identity that coexists harmoniously with its historical roots.
@@ -46,24 +47,28 @@ export const articles = [
     title: "Christmas Late Night Shopping in Colchester",
     desc: "Late night shopping returns to Colchester Town Centre for Christmas 2023",
     img: "https://cdn.pixabay.com/photo/2019/08/10/03/15/bridge-4396131_1280.jpg",
+    category: "Events",
     article: "",
   },
   {
     title: "Theatre of Widdershins: The GIngerbread Man & A Pot Full of",
     desc: "Festive Family Puppetry at Colchester Arts Centre",
     img: "https://cdn.pixabay.com/photo/2022/04/03/09/04/bridge-7108432_1280.jpg",
+    category: "Parties",
     article: "",
   },
   {
     title: "Theatre of Widdershins: The GIngerbread Man & A Pot Full of",
     desc: "Festive Family Puppetry at Colchester Arts Centre",
     img: "https://cdn.pixabay.com/photo/2020/01/11/14/36/winter-4757711_1280.jpg",
+    category: "Art",
     article: "",
   },
   {
     title: "Theatre of Widdershins: The GIngerbread Man & A Pot Full of",
     desc: "Festive Family Puppetry at Colchester Arts Centre",
     img: "https://cdn.pixabay.com/photo/2020/01/11/14/36/winter-4757711_1280.jpg",
+    category: "Art",
     article: "",
   },
 ];
