@@ -3,7 +3,7 @@ import { categories } from "./Constant";
 
 const Sidebar = ({ handleCategoryChange }) => {
   return (
-    <div className=" ml-4">
+    <div className="ml-4">
       <div>
         <h4 className="text-2xl mb-8">Categories</h4>
         <div>

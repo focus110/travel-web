@@ -8,15 +8,8 @@ const Carousel = () => {
         <div className="flex flex-col justify-center md:flex-row md:space-x-8 px-4 pb-4">
           {articles.map((item, index) =>
             index > 2 ? null : (
-              <a
-                href="/#"
-                className="md:w-[300px] overflow-hidden mb-8 md:mb-0"
-              >
-                <img
-                  className="mb-2"
-                  src={item?.img}
-                  alt={item?.title}
-                />
+              <div className="md:w-[300px] overflow-hidden mb-8 md:mb-0">
+                <img className="mb-2" src={item?.img} alt={item?.title} />
                 <div className="pb-4">
                   <h4 className="text-lg mb-4 text-left">
                     <a
@@ -28,7 +21,7 @@ const Carousel = () => {
                   </h4>
                   <p className="text-sm text-left mb-2">{item.desc}</p>
                 </div>
-              </a>
+              </div>
             )
           )}
         </div>
