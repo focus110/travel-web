@@ -14,8 +14,8 @@ const Carousel = () => {
               >
                 <img
                   className="mb-2"
-                  src="https://cdn.pixabay.com/photo/2020/12/10/06/24/christmas-tree-5819465_1280.jpg"
-                  alt=""
+                  src={item?.img}
+                  alt={item?.title}
                 />
                 <div className="pb-4">
                   <h4 className="text-lg mb-4 text-left">
