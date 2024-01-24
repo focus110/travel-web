@@ -17,7 +17,6 @@ const Sidebar = ({ handleCategoryChange, selectedCategory }) => {
               } grid p-4 mb-4 hover:bg-[#111111] hover:text-white ease-in-out duration-300`}
               key={index}
             >
-              {console.log(selectedCategory, item)}
               {item}
             </button>
           ))}

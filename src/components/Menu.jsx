@@ -9,7 +9,7 @@ const Menu = ({ handleIsVisible }) => {
     setActiveMenu(menu);
   };
   return (
-    <div className="container">
+    <div className="container shadow">
       <div className="flex items-center justify-between py-6">
         <a href="/">
           <img className="w-8 h-8 md:w-12 md:h-12" src={logo} alt="logo" />
