@@ -37,14 +37,16 @@ const Blog = () => {
                   </div>
                 ))
               ) : (
-                <div>
-                  {" "}
+                <div className="h-screen">
                   <h4 className="text-4xl py-[100px]">No posts found</h4>
                 </div>
               )}
             </div>
 
-            <Sidebar handleCategoryChange={handleCategoryChange} />
+            <Sidebar
+              handleCategoryChange={handleCategoryChange}
+              selectedCategory={selectedCategory}
+            />
           </div>
         </div>
       </div>

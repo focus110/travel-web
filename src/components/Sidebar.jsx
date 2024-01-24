@@ -1,7 +1,7 @@
 import React from "react";
 import { categories } from "./Constant";
 
-const Sidebar = ({ handleCategoryChange }) => {
+const Sidebar = ({ handleCategoryChange, selectedCategory }) => {
   return (
     <div className="ml-4">
       <div>
@@ -10,9 +10,14 @@ const Sidebar = ({ handleCategoryChange }) => {
           {categories.map((item, index) => (
             <button
               onClick={() => handleCategoryChange(item)}
-              className="grid bg-gray-100 p-4 mb-4 hover:p-5 duration-75"
+              className={`${
+                item === selectedCategory
+                  ? "bg-[#111111] text-white"
+                  : "bg-gray-100"
+              } grid p-4 mb-4 hover:bg-[#111111] hover:text-white ease-in-out duration-300`}
               key={index}
             >
+              {console.log(selectedCategory, item)}
               {item}
             </button>
           ))}
