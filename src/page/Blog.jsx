@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { articles } from "../components/Constant";
 import Sidebar from "../components/Sidebar";
+import Title from "../components/Title";
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -15,7 +16,7 @@ const Blog = () => {
       : articles.filter((item) => item.category === selectedCategory);
   return (
     <div className="container">
-      <h4 className="text-2xl mb-8">Blog</h4>
+      <Title title={`Blog`} />
       <div>
         <div>
           <div className="flex flex-col lg:flex-row  xl:space-x-8 overflow-x-scroll no-scrollbar md:pt-8">
