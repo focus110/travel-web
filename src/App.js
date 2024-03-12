@@ -21,7 +21,6 @@ function App() {
         <Menu handleIsVisible={handleIsVisible} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
           <Route path="/plan" element={<Plan />} />
           <Route path="/recommender" element={<Recommender />} />
           <Route path="/blog" element={<Blog />} />
