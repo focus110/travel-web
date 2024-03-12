@@ -216,3 +216,138 @@ export const activities = [
     category: "Guided Tours",
   },
 ];
+
+export const recommended = [
+  {
+    title: "Colchester Castle Exploration",
+    about:
+      "Discover the rich history of Colchester with a visit to the iconic Colchester Castle. Explore the ancient walls, climb the tower for panoramic views, and delve into exhibits that bring the town's history to life.",
+    location: "Colchester, United Kingdom",
+    img: "https://images.unsplash.com/photo-1544939514-aa98d908bc47?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    phone: "+44 1234 567890",
+    email: "info@colchestercastle.com",
+    website: "www.colchestercastle.com",
+    category: "History",
+  },
+  {
+    title: "Nature Walks in High Woods Country Park",
+    about:
+      "Immerse yourself in the natural beauty of High Woods Country Park. Enjoy scenic trails, spot local wildlife, and breathe in the fresh air as you explore this expansive nature reserve in the heart of Colchester.",
+    location: "Colchester, United Kingdom",
+    img: "https://images.unsplash.com/photo-1550236520-7050f3582da0?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    phone: "+44 9876 543210",
+    email: "info@highwoodspark.com",
+    website: "www.highwoodspark.com",
+    category: "Outdoor Activities",
+  },
+  {
+    title: "Culinary Delights in Colchester Market",
+    about:
+      "Indulge in a culinary journey through Colchester Market, where local vendors offer a diverse array of delicious treats. From street food to artisanal products, this market is a haven for food enthusiasts.",
+    location: "Colchester, United Kingdom",
+    img: "https://images.unsplash.com/photo-1517137744310-173515c62d59?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    phone: "+44 555 123456",
+    email: "info@colchestermarket.com",
+    website: "www.colchestermarket.com",
+    category: "Food and Drink",
+  },
+  {
+    title: "Relaxing Day at Mersea Island Beach",
+    about:
+      "Escape to the nearby Mersea Island Beach for a relaxing day by the sea. Sink your toes in the sandy shores, enjoy the gentle waves, and unwind in the peaceful coastal atmosphere.",
+    location: "Mersea Island, Colchester",
+    img: "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?q=80&w=2096&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    phone: "+44 3210 987654",
+    email: "info@merseabeach.com",
+    website: "www.merseabeach.com",
+    category: "Beach Getaway",
+  },
+  {
+    title: "Colchester Arts Centre Experience",
+    about:
+      "Immerse yourself in the vibrant arts and culture scene at Colchester Arts Centre. Enjoy live performances, art exhibitions, and cultural events that showcase the creativity thriving in the town.",
+    location: "Colchester, United Kingdom",
+    img: "https://images.unsplash.com/photo-1593073862407-a3ce22748763?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    phone: "+44 4567 890123",
+    email: "info@colchesterarts.com",
+    website: "www.colchesterarts.com",
+    category: "Arts and Culture",
+  },
+  {
+    title: "Colchester Zoo Adventure",
+    about:
+      "Embark on a thrilling safari adventure at Colchester Zoo. Encounter fascinating wildlife from around the world, participate in interactive exhibits, and create lasting memories with family and friends.",
+    location: "Colchester, United Kingdom",
+    img: "https://images.unsplash.com/photo-1503919005314-30d93d07d823?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    phone: "+44 7890 123456",
+    email: "info@colchesterzoo.com",
+    website: "www.colchesterzoo.com",
+    category: "Wildlife Exploration",
+  },
+  {
+    title: "Boat Trip on the River Colne",
+    about:
+      "Take a leisurely boat trip along the picturesque River Colne. Enjoy the scenic beauty, learn about local history, and capture breathtaking views of Colchester from the water.",
+    location: "Colchester, United Kingdom",
+    img: "https://images.unsplash.com/photo-1444487233259-dae9d907a740?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    phone: "+44 2345 678901",
+    email: "info@rivercolneboat.com",
+    website: "www.rivercolneboat.com",
+    category: "Cruise Experience",
+  },
+  {
+    title: "Adventure at Jump Street Trampoline Park",
+    about:
+      "Experience an adrenaline rush at Jump Street Trampoline Park. Bounce, flip, and soar through the air in this exciting indoor adventure park, offering fun for visitors of all ages.",
+    location: "Colchester, United Kingdom",
+    img: "https://images.unsplash.com/photo-1564409972016-2825589beaed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    phone: "+44 6789 012345",
+    email: "info@jumpstreet.com",
+    website: "www.jumpstreet.com",
+    category: "Adventure Activities",
+  },
+  {
+    title: "Spa Retreat at Stoke by Nayland Hotel",
+    about:
+      "Indulge in a relaxing spa retreat at Stoke by Nayland Hotel. Pamper yourself with luxurious treatments, unwind in serene surroundings, and rejuvenate your mind, body, and soul.",
+    location: "Colchester, United Kingdom",
+    img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    phone: "+44 7890 123456",
+    email: "info@stokespa.com",
+    website: "www.stokespa.com",
+    category: "Wellness Getaway",
+  },
+  {
+    title: "Colchester Golf Club Experience",
+    about:
+      "Tee off in the beautiful surroundings of Colchester Golf Club. Enjoy challenging courses, impeccable greens, and the company of fellow golf enthusiasts at this premier golfing destination.",
+    location: "Colchester, United Kingdom",
+    img: "https://images.unsplash.com/photo-1514480573427-1f96cbed6a27?q=80&w=2065&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    phone: "+44 1234 567890",
+    email: "info@colchestergolf.com",
+    website: "www.colchestergolf.com",
+    category: "Golf Getaway",
+  },
+  {
+    title: "Hot Air Balloon Adventure over Essex",
+    about:
+      "Soar high above the Essex landscape on a hot air balloon adventure. Take in panoramic views of Colchester and the surrounding countryside, creating memories that will last a lifetime.",
+    location: "Colchester, United Kingdom",
+    img: "https://images.unsplash.com/photo-1590053404184-ce4ee04f3d58?q=80&w=2008&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    phone: "+44 9876 543210",
+    email: "info@balloonadventure.com",
+    website: "www.balloonadventure.com",
+    category: "Aerial Experience",
+  },
+  {
+    title: "Historic Colchester Walking Tour",
+    about:
+      "Embark on a guided walking tour through historic Colchester. Explore charming streets, visit notable landmarks, and learn about the town's fascinating history from knowledgeable local guides.",
+    location: "Colchester, United Kingdom",
+    img: "https://images.unsplash.com/photo-1682686580003-22d3d65399a8?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    phone: "+44 555 123456",
+    email: "info@colchesterwalks.com",
+    website: "www.colchesterwalks.com",
+    category: "Guided Tours",
+  },
+];

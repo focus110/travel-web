@@ -10,7 +10,6 @@ const Menu = ({ handleIsVisible }) => {
   };
   return (
     <div className="shadow">
-      {" "}
       <div className="container">
         <div className="flex items-center justify-between py-6">
           <a href="/">
