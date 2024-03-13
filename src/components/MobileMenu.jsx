@@ -3,6 +3,8 @@ import { menu } from "./Constant";
 import { motion } from "framer-motion";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
+import { IoIosBookmark } from "react-icons/io";
 
 const MobileMenu = ({ isvisible, handleIsVisible, handleModal }) => {
   const [activeMenu, setActiveMenu] = useState("Home");
@@ -36,9 +38,13 @@ const MobileMenu = ({ isvisible, handleIsVisible, handleModal }) => {
           <img className="w-8 h-8 md:w-12 md:h-12" src={logo} alt="logo" />
         </a>
         <button>
-          <IoCloseCircleOutline onClick={handleIsVisible} className="w-6 h-6 cursor-pointer" />
+          <IoCloseCircleOutline
+            onClick={handleIsVisible}
+            className="w-6 h-6 cursor-pointer"
+          />
         </button>
       </div>
+
       <button
         onClick={() => {
           handleIsVisible();
@@ -62,6 +68,9 @@ const MobileMenu = ({ isvisible, handleIsVisible, handleModal }) => {
             </a>
           </li>
         ))}
+        <Link to="/favourite" className="flex items-center">
+          <IoIosBookmark className="w-8 h-8 cursor-pointer -ml-2" /><p className="text-gray-500">Favourite</p>
+        </Link>
       </ul>
     </motion.div>
   );
