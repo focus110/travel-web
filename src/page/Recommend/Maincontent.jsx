@@ -4,6 +4,7 @@ import AttractionInfo from "../../components/Recommended/AttractionInfo";
 import party from "../../assets/party.jpg";
 import candles from "../../assets/candles.jpg";
 import festival from "../../assets/festival.jpg";
+import platter from "../../assets/platter.jpg";
 
 const Maincontent = () => {
   const [imgPreview, setImgPreview] = useState(party);
@@ -12,7 +13,7 @@ const Maincontent = () => {
     setImgPreview(img);
   };
 
-  const imgs = [candles,festival];
+  const imgs = [candles, festival, platter];
   return (
     <div className="md:w-[70%] grid gap-4">
       <div className="h-[300px] md:h-[500px] overflow-hidden rounded-lg">
