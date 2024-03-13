@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Title from "../../components/Title";
 import { recommended } from "../../components/Constant";
 import Filter from "../../components/Filter";
 import Map from "../../components/Map/Map";
+import { IoIosBookmark } from "react-icons/io";
+import { Toaster, toast } from "sonner";
 
 const Recommender = () => {
+  const [savedItems, setSavedItems] = useState([]);
+
+  const handleSave = (item) => {
+    const updatedItems = [...savedItems, item];
+    setSavedItems(updatedItems);
+    localStorage.setItem("favorites", JSON.stringify(updatedItems));
+    toast.success("Successfully added to favourite");
+  };
   return (
     <div className="container min-h-screen">
+      <Toaster />
       <Title title={`Recommender for You`} />
       <Map />
       <Filter />
@@ -16,14 +27,17 @@ const Recommender = () => {
             key={i}
             class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
-          
             <a
               href={"/attractions/8sDdsa"}
               className="overflow-hidden h-[200px]"
             >
-              <img class="w-full h-[200px] object-cover rounded-t-lg" src={item.img} alt="" />
+              <img
+                class="w-full h-[200px] object-cover rounded-t-lg"
+                src={item.img}
+                alt=""
+              />
             </a>
-            <div class="p-5">
+            <div class="relative p-5">
               <a href="/attractions/8sDdsa">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   {item.title}
@@ -33,27 +47,34 @@ const Recommender = () => {
                 {item.about.slice(0, 80)}
                 {"..."}
               </p>
-              <a
-                href="/attractions/8sDdsa"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Explore
-                <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
+              <div className="flex justify-between items-center">
+                <a
+                  href="/attractions/8sDdsa"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
+                  Explore
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+
+                <IoIosBookmark
+                  onClick={() => handleSave(item)}
+                  className="w-8 h-8 cursor-pointer text-white"
+                />
+              </div>
             </div>
           </div>
         ))}
