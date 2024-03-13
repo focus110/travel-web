@@ -17,7 +17,7 @@ const Recommender = () => {
   };
   return (
     <div className="container min-h-screen">
-      <Toaster />
+      <Toaster richColors />
       <Title title={`Recommender for You`} />
       <Map />
       <Filter />
