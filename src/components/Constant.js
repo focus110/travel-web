@@ -221,6 +221,7 @@ export const activities = [
 
 export const recommended = [
   {
+    id:"1",
     title: "Colchester Castle Exploration",
     about:
       "Discover the rich history of Colchester with a visit to the iconic Colchester Castle. Explore the ancient walls, climb the tower for panoramic views, and delve into exhibits that bring the town's history to life.",
@@ -231,7 +232,7 @@ export const recommended = [
     website: "www.colchestercastle.com",
     category: "History",
   },
-  {
+  {id:"2",
     title: "Nature Walks in High Woods Country Park",
     about:
       "Immerse yourself in the natural beauty of High Woods Country Park. Enjoy scenic trails, spot local wildlife, and breathe in the fresh air as you explore this expansive nature reserve in the heart of Colchester.",
@@ -242,7 +243,7 @@ export const recommended = [
     website: "www.highwoodspark.com",
     category: "Outdoor Activities",
   },
-  {
+  {id:"3",
     title: "Culinary Delights in Colchester Market",
     about:
       "Indulge in a culinary journey through Colchester Market, where local vendors offer a diverse array of delicious treats. From street food to artisanal products, this market is a haven for food enthusiasts.",
@@ -253,7 +254,7 @@ export const recommended = [
     website: "www.colchestermarket.com",
     category: "Food and Drink",
   },
-  {
+  {id:"4",
     title: "Relaxing Day at Mersea Island Beach",
     about:
       "Escape to the nearby Mersea Island Beach for a relaxing day by the sea. Sink your toes in the sandy shores, enjoy the gentle waves, and unwind in the peaceful coastal atmosphere.",
@@ -264,7 +265,7 @@ export const recommended = [
     website: "www.merseabeach.com",
     category: "Beach Getaway",
   },
-  {
+  {id:"5",
     title: "Colchester Arts Centre Experience",
     about:
       "Immerse yourself in the vibrant arts and culture scene at Colchester Arts Centre. Enjoy live performances, art exhibitions, and cultural events that showcase the creativity thriving in the town.",
@@ -275,7 +276,7 @@ export const recommended = [
     website: "www.colchesterarts.com",
     category: "Arts and Culture",
   },
-  {
+  {id:"6",
     title: "Colchester Zoo Adventure",
     about:
       "Embark on a thrilling safari adventure at Colchester Zoo. Encounter fascinating wildlife from around the world, participate in interactive exhibits, and create lasting memories with family and friends.",
@@ -286,7 +287,7 @@ export const recommended = [
     website: "www.colchesterzoo.com",
     category: "Wildlife Exploration",
   },
-  {
+  {id:"7",
     title: "Boat Trip on the River Colne",
     about:
       "Take a leisurely boat trip along the picturesque River Colne. Enjoy the scenic beauty, learn about local history, and capture breathtaking views of Colchester from the water.",
@@ -297,7 +298,7 @@ export const recommended = [
     website: "www.rivercolneboat.com",
     category: "Cruise Experience",
   },
-  {
+  {id:"8",
     title: "Adventure at Jump Street Trampoline Park",
     about:
       "Experience an adrenaline rush at Jump Street Trampoline Park. Bounce, flip, and soar through the air in this exciting indoor adventure park, offering fun for visitors of all ages.",
@@ -308,7 +309,7 @@ export const recommended = [
     website: "www.jumpstreet.com",
     category: "Adventure Activities",
   },
-  {
+  {id:"9",
     title: "Spa Retreat at Stoke by Nayland Hotel",
     about:
       "Indulge in a relaxing spa retreat at Stoke by Nayland Hotel. Pamper yourself with luxurious treatments, unwind in serene surroundings, and rejuvenate your mind, body, and soul.",
@@ -319,7 +320,7 @@ export const recommended = [
     website: "www.stokespa.com",
     category: "Wellness Getaway",
   },
-  {
+  {id:"10",
     title: "Colchester Golf Club Experience",
     about:
       "Tee off in the beautiful surroundings of Colchester Golf Club. Enjoy challenging courses, impeccable greens, and the company of fellow golf enthusiasts at this premier golfing destination.",
@@ -330,7 +331,7 @@ export const recommended = [
     website: "www.colchestergolf.com",
     category: "Golf Getaway",
   },
-  {
+  {id:"11",
     title: "Hot Air Balloon Adventure over Essex",
     about:
       "Soar high above the Essex landscape on a hot air balloon adventure. Take in panoramic views of Colchester and the surrounding countryside, creating memories that will last a lifetime.",
@@ -341,7 +342,7 @@ export const recommended = [
     website: "www.balloonadventure.com",
     category: "Aerial Experience",
   },
-  {
+  {id:"12",
     title: "Historic Colchester Walking Tour",
     about:
       "Embark on a guided walking tour through historic Colchester. Explore charming streets, visit notable landmarks, and learn about the town's fascinating history from knowledgeable local guides.",

@@ -10,10 +10,14 @@ const Recommender = () => {
   const [savedItems, setSavedItems] = useState([]);
 
   const handleSave = (item) => {
-    const updatedItems = [...savedItems, item];
-    setSavedItems(updatedItems);
-    localStorage.setItem("favorites", JSON.stringify(updatedItems));
-    toast.success("Successfully added to favourite");
+    if (!savedItems.some((savedItem) => savedItem.id === item.id)) {
+      const updatedItems = [...savedItems, item];
+      setSavedItems(updatedItems);
+      localStorage.setItem("favorites", JSON.stringify(updatedItems));
+      toast.success("Successfully added to favourite");
+    } else{
+      toast.warning("Already added");
+    }
   };
   return (
     <div className="container min-h-screen">

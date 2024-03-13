@@ -48,6 +48,8 @@ const Favourite = () => {
             </div>
           </Link>
         ))}
+
+        {favorites.length === 0 ? <h2 className="text-black text-xl">No favourite save yet</h2> : null}
       </ul>
     </div>
   );
