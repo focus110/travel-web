@@ -21,7 +21,7 @@ const Recommender = () => {
               href={"/attractions/8sDdsa"}
               className="overflow-hidden h-[200px]"
             >
-              <img class="w-max h-[200px] rounded-t-lg" src={item.img} alt="" />
+              <img class="w-full h-[200px] object-cover rounded-t-lg" src={item.img} alt="" />
             </a>
             <div class="p-5">
               <a href="/attractions/8sDdsa">
