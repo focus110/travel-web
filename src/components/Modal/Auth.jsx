@@ -1,9 +1,12 @@
 import React from "react";
 
-const Auth = () => {
+const Auth = ({ showModal, closeModal }) => {
+  if (!showModal) return;
   return (
-    <div>
-      <form class="max-w-sm mx-auto">
+    <div
+      className={`absolute left-1/2 -translate-x-1/2 top-0 z-10 bg-white bg-opacity-60 w-full h-screen `}
+    >
+      <form class="bg-white max-w-sm mx-auto h-full flex flex-col justify-center">
         <div class="mb-5">
           <label
             for="email"

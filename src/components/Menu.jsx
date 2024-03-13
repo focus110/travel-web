@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 import { IoMenu } from "react-icons/io5";
 import { menu } from "./Constant";
 
-const Menu = ({ handleIsVisible }) => {
+const Menu = ({ handleIsVisible, handleModal }) => {
   const [activeMenu, setActiveMenu] = useState("Home");
   const handleMenuClick = (menu) => {
     setActiveMenu(menu);
@@ -32,7 +32,7 @@ const Menu = ({ handleIsVisible }) => {
               </li>
             ))}
             <button
-              type="button"
+              onClick={handleModal}
               class="text-white bg-black hover:bg-[#222] transition ease-in-out duration-150 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
             >
               Sign in
