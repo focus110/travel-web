@@ -29,7 +29,7 @@ const Recommender = () => {
     <div className="container min-h-screen">
       <Toaster richColors />
       <Title title={`Recommender for You`} />
-      <Map />
+      {/* <Map /> */}
       <Filter />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 text-left mb-8">
         {recommended.map((item, i) => (
