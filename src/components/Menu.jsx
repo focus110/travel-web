@@ -39,7 +39,7 @@ const Menu = ({ handleIsVisible, handleModal }) => {
             </button>
           </ul>
 
-          <IoMenu onClick={handleIsVisible} className="w-8 h-8 md:hidden" />
+          <IoMenu onClick={handleIsVisible} className="w-8 h-8 md:hidden cursor-pointer" />
         </div>
       </div>
     </div>

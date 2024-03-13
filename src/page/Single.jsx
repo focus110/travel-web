@@ -6,7 +6,7 @@ const Single = () => {
   // Get the parameters from the URL
   const { id } = useParams();
 
-  const { title, img, desc, article } = articles[id];
+  const { title, img,  article } = articles[id];
   return (
     <div className="container">
       <div className="">

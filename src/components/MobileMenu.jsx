@@ -36,7 +36,7 @@ const MobileMenu = ({ isvisible, handleIsVisible, handleModal }) => {
           <img className="w-8 h-8 md:w-12 md:h-12" src={logo} alt="logo" />
         </a>
         <button>
-          <IoCloseCircleOutline onClick={handleIsVisible} className="w-6 h-6" />
+          <IoCloseCircleOutline onClick={handleIsVisible} className="w-6 h-6 cursor-pointer" />
         </button>
       </div>
       <button

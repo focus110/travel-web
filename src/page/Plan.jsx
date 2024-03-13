@@ -44,7 +44,7 @@ const Plan = () => {
         <div className="flex overflow-x-scroll py-4 no-scrollbar space-x-2">
           {filteredActivities.map((item, index) => (
             <button
-              // onClick={() => handleActivityChange(item)}
+              onClick={() => handleActivityChange(item)}
               className={`${
                 item === selectedActivity
                   ? "bg-[#111111] text-white"

@@ -1,12 +1,14 @@
 import React from "react";
-import Title from "../components/Title";
-import { recommended } from "../components/Constant";
-import Filter from "../components/Filter";
+import Title from "../../components/Title";
+import { recommended } from "../../components/Constant";
+import Filter from "../../components/Filter";
+import Map from "../../components/Map/Map";
 
 const Recommender = () => {
   return (
     <div className="container min-h-screen">
-      <Title title={`Recommender`} />
+      <Title title={`Recommender for You`} />
+      <Map />
       <Filter />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 text-left mb-8">
         {recommended.map((item, i) => (
@@ -14,11 +16,15 @@ const Recommender = () => {
             key={i}
             class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
-            <a href="#" className="overflow-hidden h-[200px]">
+          
+            <a
+              href={"/attractions/8sDdsa"}
+              className="overflow-hidden h-[200px]"
+            >
               <img class="w-max h-[200px] rounded-t-lg" src={item.img} alt="" />
             </a>
             <div class="p-5">
-              <a href="#">
+              <a href="/attractions/8sDdsa">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   {item.title}
                 </h5>
@@ -28,7 +34,7 @@ const Recommender = () => {
                 {"..."}
               </p>
               <a
-                href="#"
+                href="/attractions/8sDdsa"
                 class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 Explore

@@ -2,7 +2,7 @@ import img_1 from "../assets/img_1.jpg"
 
 export const menu = [
   { name: "Home", url: "/" },
-  { name: "Recommender", url: "recommender" },
+  { name: "Recommended", url: "/attractions" },
   { name: "Plan", url: "/plan" },
   { name: "Blog", url: "/blog" },
 ];
