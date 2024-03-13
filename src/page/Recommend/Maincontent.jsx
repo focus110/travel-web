@@ -16,7 +16,7 @@ const Maincontent = () => {
   const imgs = [candles, festival, platter];
   return (
     <div className="md:w-[70%] grid gap-4">
-      <div className="h-[300px] md:h-[500px] overflow-hidden rounded-lg">
+      <div className="h-[230px] md:h-[500px] overflow-hidden rounded-lg">
         <img className="h-auto w-full object-center " src={imgPreview} alt="" />
       </div>
       <div class="grid grid-cols-5 gap-4">
