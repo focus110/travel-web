@@ -51,7 +51,11 @@ function App() {
         <div
           className={`relative ${showModal ? "h-screen overflow-hidden" : ""}`}
         >
-          <MobileMenu isvisible={isvisible} handleIsVisible={handleIsVisible} />
+          <MobileMenu
+            handleModal={handleModal}
+            isvisible={isvisible}
+            handleIsVisible={handleIsVisible}
+          />
           <Menu handleModal={handleModal} handleIsVisible={handleIsVisible} />
           <Auth showModal={showModal} closeModal={closeModal} />
           <Routes>

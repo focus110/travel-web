@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import logo from "../assets/logo.png";
 
-const MobileMenu = ({ isvisible, handleIsVisible }) => {
+const MobileMenu = ({ isvisible, handleIsVisible, handleModal }) => {
   const [activeMenu, setActiveMenu] = useState("Home");
 
   const handleMenuClick = (menu) => {
@@ -39,6 +39,12 @@ const MobileMenu = ({ isvisible, handleIsVisible }) => {
           <IoCloseCircleOutline onClick={handleIsVisible} className="w-6 h-6" />
         </button>
       </div>
+      <button
+        onClick={handleModal}
+        class="w-full text-white bg-black hover:bg-[#222] transition ease-in-out duration-150 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-5"
+      >
+        Sign in
+      </button>
       <ul className="md:hidden space-y-4 text-left">
         {menu.map((item, index) => (
           <li key={index}>
