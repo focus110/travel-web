@@ -33,7 +33,7 @@ const Menu = ({ handleIsVisible, handleModal }) => {
                 </a>
               </li>
             ))}
-            <Link to="/favorite">
+            <Link to="/favourite">
               <IoIosBookmark className="w-8 h-8 cursor-pointer" />
             </Link>
             <button

@@ -8,6 +8,7 @@ import {
   Plan,
   NotFound,
   RecommendedSingle,
+  Favourite,
 } from "./page/index";
 import { useState } from "react";
 import MobileMenu from "./components/MobileMenu";
@@ -68,6 +69,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/plan" element={<Plan />} />
+            <Route path="/favourite" element={<Favourite />} />
             <Route path="/attractions" element={<Recommender />} />
             <Route path="/attractions/:id" element={<RecommendedSingle />} />
             <Route path="/blog" element={<Blog />} />

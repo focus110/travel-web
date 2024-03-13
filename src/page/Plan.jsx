@@ -66,7 +66,7 @@ const Plan = () => {
               />
               <div className="pb-4">
                 <a
-                  href={"/plan/" + index}
+                  href={"/attractions/sd9SJM"}
                   // href={"/blog/" + item.title.split(" ").join("-")}
                   className="hover:text-gray-500 duration-75"
                 >
