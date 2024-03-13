@@ -1,12 +1,13 @@
 import React from "react";
 import Title from "../components/Title";
 import { recommended } from "../components/Constant";
+import Filter from "../components/Filter";
 
 const Recommender = () => {
   return (
     <div className="container min-h-screen">
       <Title title={`Recommender`} />
-
+      <Filter />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 text-left mb-8">
         {recommended.map((item, i) => (
           <div
