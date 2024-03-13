@@ -1,3 +1,5 @@
+import img_1 from "../assets/img_1.jpg"
+
 export const menu = [
   { name: "Home", url: "/" },
   { name: "Recommender", url: "recommender" },
@@ -9,7 +11,7 @@ export const articles = [
   {
     title: "Colchester Unveiled: A Journey Through Time and Modernity",
     desc: "Late night shopping returns to Colchester Town Centre for Christmas 2023",
-    img: "https://cdn.pixabay.com/photo/2020/03/13/08/34/south-station-4927286_1280.jpg",
+    img: img_1,
     category: "Art",
     article: `Introduction:
 

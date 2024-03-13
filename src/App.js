@@ -53,7 +53,7 @@ function App() {
         >
           <MobileMenu isvisible={isvisible} handleIsVisible={handleIsVisible} />
           <Menu handleModal={handleModal} handleIsVisible={handleIsVisible} />
-          <Auth closeModal={closeModal} />
+          <Auth showModal={showModal} closeModal={closeModal} />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/plan" element={<Plan />} />
