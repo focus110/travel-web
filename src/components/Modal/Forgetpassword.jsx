@@ -9,7 +9,7 @@ const Forgetpassword = ({ closeModal, setCurrentForm }) => {
       className={`absolute left-1/2 -translate-x-1/2 top-0 z-10 bg-white bg-opacity-60 w-full h-screen flex flex-col justify-center`}
     >
       <motion.form
-        class="relative shadow-md bg-white w-[500px] mx-auto  lg:h-[600px] flex flex-col justify-center px-16"
+        class="relative shadow-md bg-white mx-8 self-center lg:mx-auto lg:w-[500px] h-[600px] lg:h-[600px] flex flex-col justify-center  px-8 lg:px-16"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.1 }}

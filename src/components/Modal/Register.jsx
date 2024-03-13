@@ -9,7 +9,7 @@ const Register = ({ closeModal, setCurrentForm }) => {
       className={`absolute left-1/2 -translate-x-1/2 top-0 z-10 bg-white bg-opacity-60 w-full h-screen flex flex-col justify-center`}
     >
       <motion.form
-        class="relative shadow-md bg-white w-[500px] mx-auto h-[600px] flex flex-col justify-center px-16"
+        class="relative shadow-md bg-white mx-8 self-center lg:mx-auto lg:w-[500px] h-max lg:h-[600px] flex flex-col justify-center py-8 px-8 lg:px-16"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.1 }}
@@ -40,7 +40,7 @@ const Register = ({ closeModal, setCurrentForm }) => {
             required
           />
         </div>
-        <div class="mb-2">
+        <div class="mb-5">
           <label
             for="password"
             class="block text-left mb-2 text-sm font-medium text-gray-900"
@@ -55,13 +55,6 @@ const Register = ({ closeModal, setCurrentForm }) => {
             required
           />
         </div>
-
-        <p
-          onClick={() => setCurrentForm("forgetpassword")}
-          className="text-left cursor-pointer underline mb-5"
-        >
-          Forgot password?
-        </p>
 
         <button
           type="submit"

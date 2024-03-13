@@ -40,7 +40,10 @@ const MobileMenu = ({ isvisible, handleIsVisible, handleModal }) => {
         </button>
       </div>
       <button
-        onClick={handleModal}
+        onClick={() => {
+          handleIsVisible();
+          handleModal();
+        }}
         class="w-full text-white bg-black hover:bg-[#222] transition ease-in-out duration-150 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-5"
       >
         Sign in
