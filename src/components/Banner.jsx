@@ -11,7 +11,7 @@ const Banner = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="relative z-10 pt-[300px]">
+      <div className="relative z-[9] pt-[300px]">
         <h1 className="text-white text-4xl md:text-8xl font-bold">
           Colchester
         </h1>
