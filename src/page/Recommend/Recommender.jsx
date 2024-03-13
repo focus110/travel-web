@@ -1,13 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Title from "../../components/Title";
 import { recommended } from "../../components/Constant";
 import Filter from "../../components/Filter";
 import Map from "../../components/Map/Map";
 import { IoIosBookmark } from "react-icons/io";
 import { Toaster, toast } from "sonner";
+import { IoBookmarkOutline } from "react-icons/io5";
 
 const Recommender = () => {
   const [savedItems, setSavedItems] = useState([]);
+
+  useEffect(() => {
+    const savedItems = JSON.parse(localStorage.getItem("favorites")) || [];
+    setSavedItems(savedItems);
+  }, []);
 
   const handleSave = (item) => {
     if (!savedItems.some((savedItem) => savedItem.id === item.id)) {
@@ -15,7 +21,7 @@ const Recommender = () => {
       setSavedItems(updatedItems);
       localStorage.setItem("favorites", JSON.stringify(updatedItems));
       toast.success("Successfully added to favourite");
-    } else{
+    } else {
       toast.warning("Already added");
     }
   };
@@ -73,11 +79,17 @@ const Recommender = () => {
                     />
                   </svg>
                 </a>
-
-                <IoIosBookmark
-                  onClick={() => handleSave(item)}
-                  className="w-8 h-8 cursor-pointer text-white"
-                />
+                {!savedItems.some((savedItem) => savedItem.id === item.id) ? (
+                  <IoBookmarkOutline
+                    onClick={() => handleSave(item)}
+                    className="w-8 h-8 cursor-pointer text-white"
+                  />
+                ) : (
+                  <IoIosBookmark
+                    onClick={() => handleSave(item)}
+                    className="w-8 h-8 cursor-pointer text-white"
+                  />
+                )}
               </div>
             </div>
           </div>
