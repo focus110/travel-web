@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import { IoMenu } from "react-icons/io5";
 import { menu } from "./Constant";
+import { IoIosBookmark } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Menu = ({ handleIsVisible, handleModal }) => {
   const [activeMenu, setActiveMenu] = useState("Home");
@@ -31,6 +33,9 @@ const Menu = ({ handleIsVisible, handleModal }) => {
                 </a>
               </li>
             ))}
+            <Link to="/favorite">
+              <IoIosBookmark className="w-8 h-8 cursor-pointer" />
+            </Link>
             <button
               onClick={handleModal}
               class="text-white bg-black hover:bg-[#222] transition ease-in-out duration-150 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -39,7 +44,10 @@ const Menu = ({ handleIsVisible, handleModal }) => {
             </button>
           </ul>
 
-          <IoMenu onClick={handleIsVisible} className="w-8 h-8 md:hidden cursor-pointer" />
+          <IoMenu
+            onClick={handleIsVisible}
+            className="w-8 h-8 md:hidden cursor-pointer"
+          />
         </div>
       </div>
     </div>
